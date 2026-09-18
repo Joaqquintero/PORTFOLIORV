@@ -215,6 +215,8 @@ a {
 
     display: flex;
 
+    position: relative;
+
     align-items: center;
 
     justify-content: center;
@@ -247,6 +249,14 @@ a {
 
     flex-wrap: nowrap;
 
+}
+
+/* =========================================
+   INDICADOR DESLIZAR - CELULAR
+========================================= */
+
+.swipe-indicator {
+    display: none;
 }
 
 
@@ -992,6 +1002,43 @@ footer {
 ========================================= */
 
 @media (max-width: 700px) {
+
+    .swipe-indicator {
+
+    display: block;
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 20px;
+
+    color: #080808;
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+    opacity: .5;
+
+    animation: swipeHint 2s ease-in-out infinite;
+}
+
+
+@keyframes swipeHint {
+
+    0%,
+    100% {
+        transform: translateX(0);
+        opacity: .4;
+    }
+
+    50% {
+        transform: translateX(8px);
+        opacity: .8;
+    }
+
+}
 
 
     /*
