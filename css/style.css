@@ -1157,11 +1157,11 @@ footer {
 
     .walking-character {
 
-        width: 55px;
+        width: 105px;
 
         left: 10px;
 
-        bottom: 10px;
+        bottom: 0px;
 
     }
 
