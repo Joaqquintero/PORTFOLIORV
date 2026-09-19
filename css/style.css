@@ -1009,6 +1009,75 @@ footer {
 
 }
 
+/* =========================================
+   SOFTWARE
+========================================= */
+
+.software {
+    margin-top: 60px;
+    padding-left: 30px;
+    border-left: 1px solid #333333;
+}
+
+.software-title {
+    display: block;
+    margin-bottom: 25px;
+    color: #666666;
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+.software-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.software-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: transform .3s ease;
+}
+
+.software-item span {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #444444;
+    border-radius: 8px;
+    color: #aaaaaa;
+    font-size: 9px;
+    letter-spacing: 1px;
+    transition:
+        border-color .3s ease,
+        color .3s ease,
+        background .3s ease;
+}
+
+.software-item p {
+    margin: 0;
+    color: #888888;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+}
+
+.software-item:hover {
+    transform: translateX(5px);
+}
+
+.software-item:hover span {
+    border-color: #ffffff;
+    color: #ffffff;
+    background: #151515;
+}
+
+.software-item:hover p {
+    color: #ffffff;
+}
+
 
 /* =========================================
    TABLET
@@ -1227,4 +1296,17 @@ footer {
 
     }
 
+}
+
+.software {
+    margin-top: 50px;
+    padding-left: 0;
+    padding-top: 35px;
+    border-left: none;
+    border-top: 1px solid #333333;
+}
+
+.software-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 15px;
 }
