@@ -71,7 +71,7 @@ a {
 }
 
 .hero-logo {
-    width: min(820px, 70vw);
+    width: min(520px, 70vw);
 }
 
 .hero-logo img {
