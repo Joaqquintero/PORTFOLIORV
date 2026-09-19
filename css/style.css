@@ -55,22 +55,24 @@ a {
 ========================================= */
 
 .hero-content {
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -55%);
+
+    width: 90%;
+    max-width: 900px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    transform: translateY(-70px);
 }
-
 
 .hero-logo {
     width: min(820px, 70vw);
 }
-
 
 .hero-logo img {
     width: 100%;
@@ -94,18 +96,12 @@ a {
 
     font-size: 9px;
     letter-spacing: 4px;
-    font-weight: 400;
 
     display: inline-flex;
     align-items: center;
     gap: 14px;
-
-    transition:
-        background .35s ease,
-        color .35s ease,
-        border-color .35s ease,
-        transform .35s ease;
 }
+
 
 
 .hero-portfolio span {
@@ -134,16 +130,13 @@ a {
 /* =========================================
    SCROLL
 ========================================= */
-
 .scroll-indicator {
     position: absolute;
 
     left: 50%;
-    bottom: 20px;
+    bottom: 25px;
 
     transform: translateX(-50%);
-
-    z-index: 5;
 
     display: flex;
     flex-direction: column;
@@ -1089,14 +1082,24 @@ footer {
 }
 
 .hero-content {
-    transform: translateY(-40px);
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.hero-logo {
+    width: min(500px, 82vw);
 }
 
 .hero-portfolio {
-    margin-top: 30px;
-    padding: 12px 24px;
+    margin-top: 25px;
+    padding: 12px 22px;
     font-size: 8px;
     letter-spacing: 3px;
+}
+
+.scroll-indicator {
+    bottom: 15px;
 }
 
 
